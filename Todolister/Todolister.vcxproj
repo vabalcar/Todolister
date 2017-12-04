@@ -1,0 +1,323 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{3632C6C2-0874-4042-9DFE-BFE967E48D81}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Todolister</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.14393.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>..\BuildOutput\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>..\BuildOutput\IntermediateDirectory\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>..\BuildOutput\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>..\BuildOutput\IntermediateDirectory\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\BuildOutput\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>..\BuildOutput\IntermediateDirectory\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\BuildOutput\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>..\BuildOutput\IntermediateDirectory\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="ArgTranslator.cpp" />
+    <ClCompile Include="ArgumentsProcessor.cpp" />
+    <ClCompile Include="AscOrderComparer.cpp" />
+    <ClCompile Include="AtrNamer.cpp" />
+    <ClCompile Include="CurrentDateTime.cpp" />
+    <ClCompile Include="CurrentDateTimeIntervals.cpp" />
+    <ClCompile Include="CurrentDateTimeIntervalFilterParser.cpp" />
+    <ClCompile Include="Date.cpp" />
+    <ClCompile Include="DateParserCsCz.cpp" />
+    <ClCompile Include="DateParserEnUs.cpp" />
+    <ClCompile Include="DatePrinterCsCz.cpp" />
+    <ClCompile Include="DatePrinterEnUs.cpp" />
+    <ClCompile Include="DateTime.cpp" />
+    <ClCompile Include="DateTimeFilterParser.cpp" />
+    <ClCompile Include="DateTimeParser.cpp" />
+    <ClCompile Include="DateTimePrinter.cpp" />
+    <ClCompile Include="DescOrderComparer.cpp" />
+    <ClCompile Include="EmptyVals.cpp" />
+    <ClCompile Include="Event.cpp" />
+    <ClCompile Include="EventParser.cpp" />
+    <ClCompile Include="EventPrinter.cpp" />
+    <ClCompile Include="FilterOperation.cpp" />
+    <ClCompile Include="FilterOperationParser.cpp" />
+    <ClCompile Include="FilterParserRegister.cpp" />
+    <ClCompile Include="FormatRegister.cpp" />
+    <ClCompile Include="ICalDateParser.cpp" />
+    <ClCompile Include="ICalDatePrinter.cpp" />
+    <ClCompile Include="ICalendarAtrParser.cpp" />
+    <ClCompile Include="ICalendarAtrPrinter.cpp" />
+    <ClCompile Include="ICalendarLayout.cpp" />
+    <ClCompile Include="ICalTimeParser.cpp" />
+    <ClCompile Include="ICalTimePrinter.cpp" />
+    <ClCompile Include="InputParser.cpp" />
+    <ClCompile Include="InsertOperation.cpp" />
+    <ClCompile Include="InsertOperationParser.cpp" />
+    <ClCompile Include="LayoutRegister.cpp" />
+    <ClCompile Include="MergeOperation.cpp" />
+    <ClCompile Include="MergeOperationParser.cpp" />
+    <ClCompile Include="NamelessAtrParser.cpp" />
+    <ClCompile Include="NamelessAtrPrinter.cpp" />
+    <ClCompile Include="OutputPrinter.cpp" />
+    <ClCompile Include="RemoveOperation.cpp" />
+    <ClCompile Include="RemoveOperationParser.cpp" />
+    <ClCompile Include="SortOperation.cpp" />
+    <ClCompile Include="SortOperationParser.cpp" />
+    <ClCompile Include="StringUtils.cpp" />
+    <ClCompile Include="TableLayout.cpp" />
+    <ClCompile Include="Time.cpp" />
+    <ClCompile Include="TimeOrganizer.cpp" />
+    <ClCompile Include="TimeOrganizerIndividual.cpp" />
+    <ClCompile Include="TimeOrganizerManager.cpp" />
+    <ClCompile Include="TimeOrganizerOperator.cpp" />
+    <ClCompile Include="TimeOrganizerParser.cpp" />
+    <ClCompile Include="TimeOrganizerPrinter.cpp" />
+    <ClCompile Include="TimeParserCsCz.cpp" />
+    <ClCompile Include="TimeParserEnUs.cpp" />
+    <ClCompile Include="TimePrinterCsCz.cpp" />
+    <ClCompile Include="TimePrinterEnUs.cpp" />
+    <ClCompile Include="Todo.cpp" />
+    <ClCompile Include="Todolister.cpp" />
+    <ClCompile Include="TodoParser.cpp" />
+    <ClCompile Include="TodoPrinter.cpp" />
+    <ClCompile Include="TOIParser.cpp" />
+    <ClCompile Include="TOIPrinter.cpp" />
+    <ClCompile Include="TOIIORegister.cpp" />
+    <ClCompile Include="TOOGeneralParser.cpp" />
+    <ClCompile Include="TOOParserRegister.cpp" />
+    <ClCompile Include="TopFilterParser.cpp" />
+    <ClCompile Include="UniverzalDTParser.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ArgTranslator.h" />
+    <ClInclude Include="ArgumentsProcessor.h" />
+    <ClInclude Include="AscOrderComparer.h" />
+    <ClInclude Include="CurrentDateTime.h" />
+    <ClInclude Include="CurrentDateTimeIntervals.h" />
+    <ClInclude Include="CurrentDateTimeIntervalFilter.h" />
+    <ClInclude Include="CurrentDateTimeIntervalFilterParser.h" />
+    <ClInclude Include="DateParserCsCz.h" />
+    <ClInclude Include="DateParserEnUs.h" />
+    <ClInclude Include="DatePrinterCsCz.h" />
+    <ClInclude Include="DatePrinterEnUs.h" />
+    <ClInclude Include="DateTimeFilterParser.h" />
+    <ClInclude Include="DateTimeInterval.h" />
+    <ClInclude Include="DescOrderComparer.h" />
+    <ClInclude Include="EmptyVals.h" />
+    <ClInclude Include="FileException.h" />
+    <ClInclude Include="DateTimeFilter.h" />
+    <ClInclude Include="FilterOperation.h" />
+    <ClInclude Include="FilterOperationParser.h" />
+    <ClInclude Include="FilterParser.h" />
+    <ClInclude Include="FilterParserRegister.h" />
+    <ClInclude Include="ICalDateParser.h" />
+    <ClInclude Include="ICalDatePrinter.h" />
+    <ClInclude Include="ICalendarAtrParser.h" />
+    <ClInclude Include="ICalendarAtrPrinter.h" />
+    <ClInclude Include="ICalendarLayoutFactory.h" />
+    <ClInclude Include="ICalTimeParser.h" />
+    <ClInclude Include="ICalTimePrinter.h" />
+    <ClInclude Include="InputParser.h" />
+    <ClInclude Include="InsertOperation.h" />
+    <ClInclude Include="InsertOperationParser.h" />
+    <ClInclude Include="InvalidArgumentException.h" />
+    <ClInclude Include="LayoutFactory.h" />
+    <ClInclude Include="MergeOperation.h" />
+    <ClInclude Include="MergeOperationParser.h" />
+    <ClInclude Include="NamelessAtrParser.h" />
+    <ClInclude Include="AtrNamer.h" />
+    <ClInclude Include="AtrParser.h" />
+    <ClInclude Include="AtrPrinter.h" />
+    <ClInclude Include="NamelessAtrPrinter.h" />
+    <ClInclude Include="Date.h" />
+    <ClInclude Include="DateParser.h" />
+    <ClInclude Include="DatePrinter.h" />
+    <ClInclude Include="DateTime.h" />
+    <ClInclude Include="DateTimeParser.h" />
+    <ClInclude Include="DateTimePrinter.h" />
+    <ClInclude Include="Event.h" />
+    <ClInclude Include="EventParser.h" />
+    <ClInclude Include="EventPrinter.h" />
+    <ClInclude Include="ICalendarLayout.h" />
+    <ClInclude Include="Layout.h" />
+    <ClInclude Include="FormatRegister.h" />
+    <ClInclude Include="ICalendarFormat.h" />
+    <ClInclude Include="Format.h" />
+    <ClInclude Include="LayoutFactoryRegister.h" />
+    <ClInclude Include="NegFilter.h" />
+    <ClInclude Include="OutputPrinter.h" />
+    <ClInclude Include="ParseException.h" />
+    <ClInclude Include="RemoveOperation.h" />
+    <ClInclude Include="RemoveOperationParser.h" />
+    <ClInclude Include="SortOperation.h" />
+    <ClInclude Include="SortOperationParser.h" />
+    <ClInclude Include="StringUtils.h" />
+    <ClInclude Include="TableLayout.h" />
+    <ClInclude Include="CsCz.h" />
+    <ClInclude Include="EnUs.h" />
+    <ClInclude Include="TableLayoutFactory.h" />
+    <ClInclude Include="Time.h" />
+    <ClInclude Include="TimeOrganizer.h" />
+    <ClInclude Include="TimeOrganizerIndividual.h" />
+    <ClInclude Include="TimeOrganizerManager.h" />
+    <ClInclude Include="TimeOrganizerOperation.h" />
+    <ClInclude Include="TimeOrganizerOperator.h" />
+    <ClInclude Include="TimeOrganizerParser.h" />
+    <ClInclude Include="TimeOrganizerPrinter.h" />
+    <ClInclude Include="TimeParser.h" />
+    <ClInclude Include="TimeParserCsCz.h" />
+    <ClInclude Include="TimeParserEnUs.h" />
+    <ClInclude Include="TimePrinter.h" />
+    <ClInclude Include="TimePrinterCsCz.h" />
+    <ClInclude Include="TimePrinterEnUs.h" />
+    <ClInclude Include="Todo.h" />
+    <ClInclude Include="TodolisterException.h" />
+    <ClInclude Include="TodoParser.h" />
+    <ClInclude Include="TodoPrinter.h" />
+    <ClInclude Include="TOIIO.h" />
+    <ClInclude Include="TOIParser.h" />
+    <ClInclude Include="TOIPrinter.h" />
+    <ClInclude Include="TOIIORegister.h" />
+    <ClInclude Include="TOOGeneralParser.h" />
+    <ClInclude Include="TOOParser.h" />
+    <ClInclude Include="TOOParserRegister.h" />
+    <ClInclude Include="TopFilter.h" />
+    <ClInclude Include="TopFilterParser.h" />
+    <ClInclude Include="UniverzalDTParser.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

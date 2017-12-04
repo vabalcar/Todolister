@@ -1,0 +1,182 @@
+**Zpracovani neznamych souboru
+//Vypis souboru tests.in na standardni vystup:
+from file tests.in layout table containing event select UCSEN delimiters ; to console layout table select UCSEN delimiters ;
+
+//Vypis (nacteni) vicera souboru najednou
+from file tests.in file tests2.in layout table containing event select UCSEN delimiters ; to console layout table select UCSEN delimiters " "
+
+//Sliti vicera souboru:
+from file tests.in layout table containing event select UCSEN delimiters ; do merge file tests2.in layout table containing event select UCSEN delimiters ; to console layout table select UCSEN delimiters " "
+
+//Setrideny vypis urcitych informaci:
+from file tests.in layout table containing event select UCSEN delimiters ; do sort asc to console layout table select SN delimiters "	"
+
+//Jmeno a zacatek nejpozdeji zacinajici udalosti:
+from file tests.in layout table containing event select UCSEN delimiters ; do sort desc do filter top 1 to console layout table select NS delimiters " "
+
+//Vytvoreni kopie souboru tests.in s nahrazenim delimiteru ; za mezery:
+from file tests.in layout table containing event select UCSEN delimiters ; to file mujKalendar.in layout table select UCSEN delimiters " "
+
+//Konverze kalendare na todolist:
+from file tests.in layout table containing todo select UCD_N delimiters ; to console layout table containing todo select DN delimiters "	- "
+
+**Prace s registrovanymi soubory
+//Registrace kalendare ze souboru mujKalendar.in:
+register kalendar file mujKalendar.in layout table select UCSEN delimiters " "
+
+//Vypis zaregistrovaneho kalendare do konsole:
+load kalendar to console
+
+//Pridani udalosti do zaregistrovaneho kalendare:
+load kalendar do insert file toInsert.in delimiters ECAHFTI select NSECU
+//Vypis zmeneneho kalendare do konsole:
+load kalendar to console
+
+**Vypisy pozadovanych zajimavych informaci
+//2 nejblizsi udalosti (funguje obecne pro n nejblzsich udaalosti)
+load kalendar to console do filter datetime since now do filter top 2
+
+//jmeno a zacatek nejblizsi udalosti:
+load kalendar to console select NS do filter datetime since now do filter top 1
+
+//Udalosti od zitra do 28.6.2017 (vypis udalosti na zadane nasledujici obdobi):
+load kalendar to console select NS do filter datetime since today do remove datetime matches today do filter datetime until 28.6.2017 do sort desc
+
+//Udalosti od 28.3.2017 do vcera (vypis udalosti na zadane predchozi obdobi):
+load kalendar to console select NS do filter datetime until today do remove datetime matches today do remove datetime until 28.3.2017 do sort desc
+
+//Udalosti od 28.3.2017 do 28.6.2017 (vypis udalosti od konkretniho dne do jineho konkretniho dne):
+load kalendar to console select NS do filter datetime until 28.6.2017 do remove datetime matches today do remove datetime until 28.3.2017 do sort desc
+
+//udalosti dnes:
+load kalendar to console select NS do filter datetime matches today
+
+//udalosti v tento mesic:
+load kalendar to console select NS do filter current month
+
+//udalosti letos:
+load kalendar to console select NS do filter current year
+
+**vypis do pozadovaneho streamu
+//udalosti, ktere nejsou letos, vypsane na standardni vystup:
+load kalendar to console select NS do remove current year
+
+//udalosti, ktere nejsou letos, vypsane do souboru "demo1.out":
+load kalendar to file demo1.out select NS do remove current year
+
+**ukazka podporovanych formatu
+//tabulkovy format s nastavenim "kulturni informace" cs-cz:
+load kalendar to console layout table format cs-cz
+
+//tabulkovy format s nastavenim "kulturni informace" en-us:
+load kalendar to console layout table format en-us
+
+//format iCalendar - vypis na standardni vystup:
+load kalendar to console layout ical format ical
+
+//format iCalendar - vypis do souboru importovatelneho do Google kalendare:
+load kalendar to file kalendar.ical layout ical format ical
+
+//format iCalendar - parsovani souboru ve formatu iCalendar:
+from file kalendar.ical layout ical format ical to console layout table select UCSEN delimiters " "
+
+**chybne vstupy zpusobujici vyjimku
+//nesmyslny nahodny vstup
+candcansdjcnkjandscn
+
+//"zle" znaky:
+&^*&(^&()žýěžřčářýžě
+
+//chyba pri zpracovani vstupniho souboru:
+from file neexistujici_soubor layout table containing event select UCSEN delimiters ; to console layout table select UCSEN delimiters " "
+
+//nexistujici layout:
+from file tests.in layout neexistujici containing event select UCSEN delimiters ; to console layout table select UCSEN delimiters " "
+
+from file tests.in layout table containing event select UCSEN delimiters ; to console layout neexistuje select UCSEN delimiters " "
+
+//neexistujici format:
+from file tests.in layout table containing event select UCSEN delimiters ; format neexistuje to console layout table select UCSEN delimiters ;
+
+from file tests.in layout table containing event select UCSEN delimiters ; to console layout table select UCSEN delimiters " " format neexistuje
+
+//neexistujici typ objektu v souboru (viz dokumentace):
+from file tests.in layout table containing neexistuje select UCSEN delimiters ; to console layout table select UCSEN delimiters " "
+
+from file tests.in layout table containing event select UCSEN delimiters ; to console layout table select UCSEN delimiters " " containing neexistuje
+
+//neexistujici operace:
+load kalendar to console select NS do vylez na strom
+
+//chyba v argumentech operace:
+load kalendar to console select NS do filter datetime since 17.x.201é
+
+**chybne vstupy nezpusobujici vyjimku
+//vypis spantne formatovaneho souboru:
+from file wrong.in layout table containing event select UCSEN delimiters ; to console layout table select UCSEN delimiters "	"
+
+//chybna specifikace polozek toi:
+from file tests.in layout table containing event select NEVYBERESNIC delimiters ; to console layout table select UCSEN delimiters " "
+
+from file tests.in layout table containing event select UCSEN delimiters ; to console layout table select NEVYBERESNIC delimiters " "
+
+//spatne vstupni delimitery:
+from file tests.in layout table containing event select UCSEN delimiters _b to console layout table select UCSEN delimiters " "
+
+**neuplne vstupy 
+//pozn.: format, layout a typ toi maji vychozi hodnotu
+
+//chybejici delimitery:
+from file tests.in select UCSEN to console select UCSEN delimiters ;
+
+from file tests.in select UCSEN delimiters ; to console select UCSEN
+
+//chybejici specifikace polozek toi:
+from file tests.in delimiters ; to console select UCSEN delimiters ;
+
+from file tests.in select UCSEN delimiters ; to console delimiters ;
+
+//chybejici nazev souboru:
+from file select UCSEN delimiters ; to console select UCSEN delimiters ;
+
+from file tests.in select UCSEN delimiters ; to file select UCSEN delimiters ;
+
+//chybejici specifikace vstupu:
+to console select UCSEN delimiters ;
+
+//chybejici specifikace vystupu:
+from file tests.in select UCSEN delimiters ;
+
+//chybejici "do":
+load kalendar to console select NS filter current year
+
+**oprava nalezenych chyb
+//spatne zadani operace - bez argumentu
+do
+load kalendar to console do
+do filter
+load kalendar to console do filter
+do remove
+load kalendar to console do remove
+do sort
+load kalendar to console do sort
+do insert
+load kalendar to console do insert
+do merge
+load kalendar to console do merge
+
+//spatne zadani operace - chyba v argumentu operace
+do filter chyba
+load kalendar to console do filter chyba
+do filter since chyba
+load kalendar to console do filter since chyba
+do remove chyba
+load kalendar to console do remove chyba
+do remove since chyba
+load kalendar to console do remove since chyba
+do sort chyba
+load kalendar to console do sort chyba
+do insert chyba
+load kalendar to console do insert chyba
+do merge chyba
+load kalendar to console do merge chyba

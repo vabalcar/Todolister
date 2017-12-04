@@ -1,0 +1,657 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\DateTime">
+      <UniqueIdentifier>{f0b44892-3a9f-4062-b119-50d2455e3e3f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\DateTime\Date">
+      <UniqueIdentifier>{7e8569d2-c1f8-4292-84b8-8dfa941bbb1e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\DateTime\Time">
+      <UniqueIdentifier>{d9eaca26-2db1-4c69-bc3b-123f75474528}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\TimeOrganizer">
+      <UniqueIdentifier>{1ad387bf-ce70-479f-8054-8abef149681b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\DataDescription">
+      <UniqueIdentifier>{5f58ac63-3ccd-4cdf-b8cc-cfa5aa4266e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\DataDescription\Layout">
+      <UniqueIdentifier>{408270af-6b0d-43d8-9214-710bdceac7d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\DataDescription\Layout\ICalendar">
+      <UniqueIdentifier>{5b5429a1-2536-49b6-abfb-46c43f717675}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\DataDescription\Layout\Table">
+      <UniqueIdentifier>{7e932f60-fff6-4258-b01f-441ae0a786ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\DataDescription\Format">
+      <UniqueIdentifier>{090b7fc3-2173-4217-874f-d1f4a8d11313}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\DataDescription\Format\Cultures">
+      <UniqueIdentifier>{3d921e3a-3fcd-4589-8c41-a9bf0aed5f81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\DataDescription\Format\ICalendar">
+      <UniqueIdentifier>{ccf06b9a-5411-402f-bc55-aba7b98f5460}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\TimeOrganizer\TOI">
+      <UniqueIdentifier>{8a74d72d-6504-4623-b70a-307c21c5e2f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\TimeOrganizer\TOI\Event">
+      <UniqueIdentifier>{ae0871f7-aaab-450c-b4ce-e312a517dd4f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\TimeOrganizer\TOI\Todo">
+      <UniqueIdentifier>{fc25350f-1fca-4bc7-9587-bf227b3da9e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\DataDescription\Format\Cultures\cs-cz">
+      <UniqueIdentifier>{826220f7-09d0-4abe-aacc-c5de4a13b466}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\DataDescription\Format\Cultures\en-us">
+      <UniqueIdentifier>{ee5d3905-65ee-447a-99ec-e18cb4755fa4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\TimeOrganizer\Filters">
+      <UniqueIdentifier>{dafe6067-7ee5-4ada-8888-64eac4996838}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\TimeOrganizer\TOOperations">
+      <UniqueIdentifier>{6f0ba675-78ef-4e2e-b5b0-5d4ae5e46da0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\DataDescription">
+      <UniqueIdentifier>{1d850862-a2e8-475e-add4-4074306c62e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\DataDescription\Format">
+      <UniqueIdentifier>{5f688d5d-1c02-4ad5-82f5-553a58d11f25}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\DataDescription\Format\Cultures">
+      <UniqueIdentifier>{3b9ab6ff-ca64-4638-95a2-62a1ab18fd07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\DataDescription\Format\Cultures\cs-cz">
+      <UniqueIdentifier>{dcba8d83-9b23-46cd-baaa-70b539d1c767}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\DataDescription\Format\Cultures\en-us">
+      <UniqueIdentifier>{bfd882e5-be00-4b1a-a2e5-52c744d56e59}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\DataDescription\Format\ICalendar">
+      <UniqueIdentifier>{53a2fbf0-6ed3-485c-8dac-7d55b4e60c45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\DataDescription\Layout">
+      <UniqueIdentifier>{c2aa67f7-fe02-4ccf-afd5-f6b7676831b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\DataDescription\Layout\ICalendar">
+      <UniqueIdentifier>{efb1311b-ae7a-443a-8231-ab3069d873fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\DataDescription\Layout\Table">
+      <UniqueIdentifier>{62e378ab-a9c1-4644-a3b4-7ce0785b3620}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\DateTime">
+      <UniqueIdentifier>{3cd555b7-d418-4e6d-9659-a5c6580ecb9f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\DateTime\Date">
+      <UniqueIdentifier>{e8977ae1-aace-4a98-9c2a-9f0ebcdc0d4a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\DateTime\Time">
+      <UniqueIdentifier>{0d4c7e80-6bc3-49f4-a6dc-d1011e3eab19}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\TimeOrganizer">
+      <UniqueIdentifier>{2554eaf5-6d9a-46ad-aadd-493b26f11aac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\TimeOrganizer\Filters">
+      <UniqueIdentifier>{83328b2c-0847-485c-9564-fc61aa644ff0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\TimeOrganizer\TOI">
+      <UniqueIdentifier>{1bb12171-6f3e-4763-8077-d52175fa1744}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\TimeOrganizer\TOI\Event">
+      <UniqueIdentifier>{48f1ff10-e905-4baf-aef2-49829af80ac4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\TimeOrganizer\TOI\Todo">
+      <UniqueIdentifier>{565fcd8a-c1a9-4f80-822c-a5d0a2b2f224}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\TimeOrganizer\TOI\TOOperations">
+      <UniqueIdentifier>{1ccd07c2-15f9-47bc-91af-6f496615114e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\TimeOrganizer\TOOperations">
+      <UniqueIdentifier>{c8ad3d2a-69d6-43b7-b778-fc63f4ff9842}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\TimeOrganizer\TOOperations\Merge">
+      <UniqueIdentifier>{6d7afef0-07de-4064-9d03-0b35cdebb214}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\TimeOrganizer\TOOperations\Filter">
+      <UniqueIdentifier>{26fc7295-6135-425f-9384-cfbf8a597a0f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\TimeOrganizer\TOOperations\Insert">
+      <UniqueIdentifier>{ca1118cc-18b4-4565-a7f9-8ce2ad3d1c32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\TimeOrganizer\TOOperations\Remove">
+      <UniqueIdentifier>{91be376f-4cbc-4ddc-8ab9-243d726abde2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\TimeOrganizer\TOOperations\Sort">
+      <UniqueIdentifier>{1b90a8a1-350b-4e47-809d-e31904e6748a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\TimeOrganizer\TOOperations\Filter">
+      <UniqueIdentifier>{5c9db5c7-b783-4b46-9285-7266f25306d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\TimeOrganizer\TOOperations\Insert">
+      <UniqueIdentifier>{cc30a6c9-8493-424a-87d4-ad075cee4cd0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\TimeOrganizer\TOOperations\Remove">
+      <UniqueIdentifier>{32333fab-56d1-4714-94a7-790ca8fd6196}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\TimeOrganizer\TOOperations\Sort">
+      <UniqueIdentifier>{070e4a87-c170-48fb-aad3-47c0e3e6d2c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\TimeOrganizer\TOOperations\Merge">
+      <UniqueIdentifier>{2d07e4df-3b3b-4e9b-9fe3-e2d7c358de38}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Exceptions">
+      <UniqueIdentifier>{00c032fc-f2f2-46b1-8479-52155ea7f260}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Todolister.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DateParserCsCz.cpp">
+      <Filter>Source Files\DataDescription\Format\Cultures\cs-cz</Filter>
+    </ClCompile>
+    <ClCompile Include="DatePrinterCsCz.cpp">
+      <Filter>Source Files\DataDescription\Format\Cultures\cs-cz</Filter>
+    </ClCompile>
+    <ClCompile Include="DateParserEnUs.cpp">
+      <Filter>Source Files\DataDescription\Format\Cultures\en-us</Filter>
+    </ClCompile>
+    <ClCompile Include="DatePrinterEnUs.cpp">
+      <Filter>Source Files\DataDescription\Format\Cultures\en-us</Filter>
+    </ClCompile>
+    <ClCompile Include="TimeParserEnUs.cpp">
+      <Filter>Source Files\DataDescription\Format\Cultures\en-us</Filter>
+    </ClCompile>
+    <ClCompile Include="TimePrinterEnUs.cpp">
+      <Filter>Source Files\DataDescription\Format\Cultures\en-us</Filter>
+    </ClCompile>
+    <ClCompile Include="FormatRegister.cpp">
+      <Filter>Source Files\DataDescription\Format</Filter>
+    </ClCompile>
+    <ClCompile Include="ICalendarAtrParser.cpp">
+      <Filter>Source Files\DataDescription\Layout\ICalendar</Filter>
+    </ClCompile>
+    <ClCompile Include="ICalendarAtrPrinter.cpp">
+      <Filter>Source Files\DataDescription\Layout\ICalendar</Filter>
+    </ClCompile>
+    <ClCompile Include="ICalendarLayout.cpp">
+      <Filter>Source Files\DataDescription\Layout\ICalendar</Filter>
+    </ClCompile>
+    <ClCompile Include="NamelessAtrParser.cpp">
+      <Filter>Source Files\DataDescription\Layout\Table</Filter>
+    </ClCompile>
+    <ClCompile Include="NamelessAtrPrinter.cpp">
+      <Filter>Source Files\DataDescription\Layout\Table</Filter>
+    </ClCompile>
+    <ClCompile Include="TableLayout.cpp">
+      <Filter>Source Files\DataDescription\Layout\Table</Filter>
+    </ClCompile>
+    <ClCompile Include="AtrNamer.cpp">
+      <Filter>Source Files\DataDescription\Layout</Filter>
+    </ClCompile>
+    <ClCompile Include="LayoutRegister.cpp">
+      <Filter>Source Files\DataDescription\Layout</Filter>
+    </ClCompile>
+    <ClCompile Include="Date.cpp">
+      <Filter>Source Files\DateTime\Date</Filter>
+    </ClCompile>
+    <ClCompile Include="Time.cpp">
+      <Filter>Source Files\DateTime\Time</Filter>
+    </ClCompile>
+    <ClCompile Include="TimeParserCsCz.cpp">
+      <Filter>Source Files\DataDescription\Format\Cultures\cs-cz</Filter>
+    </ClCompile>
+    <ClCompile Include="TimePrinterCsCz.cpp">
+      <Filter>Source Files\DataDescription\Format\Cultures\cs-cz</Filter>
+    </ClCompile>
+    <ClCompile Include="DateTime.cpp">
+      <Filter>Source Files\DateTime</Filter>
+    </ClCompile>
+    <ClCompile Include="DateTimeParser.cpp">
+      <Filter>Source Files\DateTime</Filter>
+    </ClCompile>
+    <ClCompile Include="DateTimePrinter.cpp">
+      <Filter>Source Files\DateTime</Filter>
+    </ClCompile>
+    <ClCompile Include="Event.cpp">
+      <Filter>Source Files\TimeOrganizer\TOI\Event</Filter>
+    </ClCompile>
+    <ClCompile Include="EventParser.cpp">
+      <Filter>Source Files\TimeOrganizer\TOI\Event</Filter>
+    </ClCompile>
+    <ClCompile Include="EventPrinter.cpp">
+      <Filter>Source Files\TimeOrganizer\TOI\Event</Filter>
+    </ClCompile>
+    <ClCompile Include="Todo.cpp">
+      <Filter>Source Files\TimeOrganizer\TOI\Todo</Filter>
+    </ClCompile>
+    <ClCompile Include="TodoParser.cpp">
+      <Filter>Source Files\TimeOrganizer\TOI\Todo</Filter>
+    </ClCompile>
+    <ClCompile Include="TodoPrinter.cpp">
+      <Filter>Source Files\TimeOrganizer\TOI\Todo</Filter>
+    </ClCompile>
+    <ClCompile Include="TimeOrganizerIndividual.cpp">
+      <Filter>Source Files\TimeOrganizer\TOI</Filter>
+    </ClCompile>
+    <ClCompile Include="TOIParser.cpp">
+      <Filter>Source Files\TimeOrganizer\TOI</Filter>
+    </ClCompile>
+    <ClCompile Include="TOIPrinter.cpp">
+      <Filter>Source Files\TimeOrganizer\TOI</Filter>
+    </ClCompile>
+    <ClCompile Include="TimeOrganizerParser.cpp">
+      <Filter>Source Files\TimeOrganizer</Filter>
+    </ClCompile>
+    <ClCompile Include="TimeOrganizerPrinter.cpp">
+      <Filter>Source Files\TimeOrganizer</Filter>
+    </ClCompile>
+    <ClCompile Include="TimeOrganizer.cpp">
+      <Filter>Source Files\TimeOrganizer</Filter>
+    </ClCompile>
+    <ClCompile Include="ICalDateParser.cpp">
+      <Filter>Source Files\DataDescription\Format\ICalendar</Filter>
+    </ClCompile>
+    <ClCompile Include="ICalDatePrinter.cpp">
+      <Filter>Source Files\DataDescription\Format\ICalendar</Filter>
+    </ClCompile>
+    <ClCompile Include="ICalTimeParser.cpp">
+      <Filter>Source Files\DataDescription\Format\ICalendar</Filter>
+    </ClCompile>
+    <ClCompile Include="ICalTimePrinter.cpp">
+      <Filter>Source Files\DataDescription\Format\ICalendar</Filter>
+    </ClCompile>
+    <ClCompile Include="DescOrderComparer.cpp">
+      <Filter>Source Files\TimeOrganizer</Filter>
+    </ClCompile>
+    <ClCompile Include="ArgumentsProcessor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StringUtils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UniverzalDTParser.cpp">
+      <Filter>Source Files\DateTime</Filter>
+    </ClCompile>
+    <ClCompile Include="FilterOperation.cpp">
+      <Filter>Source Files\TimeOrganizer\TOOperations\Filter</Filter>
+    </ClCompile>
+    <ClCompile Include="SortOperation.cpp">
+      <Filter>Source Files\TimeOrganizer\TOOperations\Sort</Filter>
+    </ClCompile>
+    <ClCompile Include="TOOParserRegister.cpp">
+      <Filter>Source Files\TimeOrganizer\TOOperations</Filter>
+    </ClCompile>
+    <ClCompile Include="FilterOperationParser.cpp">
+      <Filter>Source Files\TimeOrganizer\TOOperations\Filter</Filter>
+    </ClCompile>
+    <ClCompile Include="SortOperationParser.cpp">
+      <Filter>Source Files\TimeOrganizer\TOOperations\Sort</Filter>
+    </ClCompile>
+    <ClCompile Include="DateTimeFilterParser.cpp">
+      <Filter>Source Files\TimeOrganizer\Filters</Filter>
+    </ClCompile>
+    <ClCompile Include="AscOrderComparer.cpp">
+      <Filter>Source Files\TimeOrganizer</Filter>
+    </ClCompile>
+    <ClCompile Include="RemoveOperationParser.cpp">
+      <Filter>Source Files\TimeOrganizer\TOOperations\Remove</Filter>
+    </ClCompile>
+    <ClCompile Include="RemoveOperation.cpp">
+      <Filter>Source Files\TimeOrganizer\TOOperations\Remove</Filter>
+    </ClCompile>
+    <ClCompile Include="TimeOrganizerOperator.cpp">
+      <Filter>Source Files\TimeOrganizer</Filter>
+    </ClCompile>
+    <ClCompile Include="TOIIORegister.cpp">
+      <Filter>Source Files\TimeOrganizer\TOI</Filter>
+    </ClCompile>
+    <ClCompile Include="InputParser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OutputPrinter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TOOGeneralParser.cpp">
+      <Filter>Source Files\TimeOrganizer\TOOperations</Filter>
+    </ClCompile>
+    <ClCompile Include="InsertOperation.cpp">
+      <Filter>Source Files\TimeOrganizer\TOOperations\Insert</Filter>
+    </ClCompile>
+    <ClCompile Include="InsertOperationParser.cpp">
+      <Filter>Source Files\TimeOrganizer\TOOperations\Insert</Filter>
+    </ClCompile>
+    <ClCompile Include="MergeOperation.cpp">
+      <Filter>Source Files\TimeOrganizer\TOOperations\Merge</Filter>
+    </ClCompile>
+    <ClCompile Include="MergeOperationParser.cpp">
+      <Filter>Source Files\TimeOrganizer\TOOperations\Merge</Filter>
+    </ClCompile>
+    <ClCompile Include="ArgTranslator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CurrentDateTimeIntervals.cpp">
+      <Filter>Source Files\DateTime</Filter>
+    </ClCompile>
+    <ClCompile Include="CurrentDateTimeIntervalFilterParser.cpp">
+      <Filter>Source Files\TimeOrganizer\Filters</Filter>
+    </ClCompile>
+    <ClCompile Include="FilterParserRegister.cpp">
+      <Filter>Source Files\TimeOrganizer\Filters</Filter>
+    </ClCompile>
+    <ClCompile Include="CurrentDateTime.cpp">
+      <Filter>Source Files\DateTime</Filter>
+    </ClCompile>
+    <ClCompile Include="TopFilterParser.cpp">
+      <Filter>Source Files\TimeOrganizer\Filters</Filter>
+    </ClCompile>
+    <ClCompile Include="TimeOrganizerManager.cpp">
+      <Filter>Source Files\TimeOrganizer</Filter>
+    </ClCompile>
+    <ClCompile Include="EmptyVals.cpp">
+      <Filter>Source Files\DataDescription</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DateTimeParser.h">
+      <Filter>Header Files\DateTime</Filter>
+    </ClInclude>
+    <ClInclude Include="DateTime.h">
+      <Filter>Header Files\DateTime</Filter>
+    </ClInclude>
+    <ClInclude Include="DateTimePrinter.h">
+      <Filter>Header Files\DateTime</Filter>
+    </ClInclude>
+    <ClInclude Include="Date.h">
+      <Filter>Header Files\DateTime\Date</Filter>
+    </ClInclude>
+    <ClInclude Include="DateParser.h">
+      <Filter>Header Files\DateTime\Date</Filter>
+    </ClInclude>
+    <ClInclude Include="DatePrinter.h">
+      <Filter>Header Files\DateTime\Date</Filter>
+    </ClInclude>
+    <ClInclude Include="Time.h">
+      <Filter>Header Files\DateTime\Time</Filter>
+    </ClInclude>
+    <ClInclude Include="TimeParser.h">
+      <Filter>Header Files\DateTime\Time</Filter>
+    </ClInclude>
+    <ClInclude Include="TimePrinter.h">
+      <Filter>Header Files\DateTime\Time</Filter>
+    </ClInclude>
+    <ClInclude Include="Todo.h">
+      <Filter>Header Files\TimeOrganizer\TOI\Todo</Filter>
+    </ClInclude>
+    <ClInclude Include="TodoParser.h">
+      <Filter>Header Files\TimeOrganizer\TOI\Todo</Filter>
+    </ClInclude>
+    <ClInclude Include="TodoPrinter.h">
+      <Filter>Header Files\TimeOrganizer\TOI\Todo</Filter>
+    </ClInclude>
+    <ClInclude Include="Event.h">
+      <Filter>Header Files\TimeOrganizer\TOI\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="EventParser.h">
+      <Filter>Header Files\TimeOrganizer\TOI\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="EventPrinter.h">
+      <Filter>Header Files\TimeOrganizer\TOI\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="TimeOrganizer.h">
+      <Filter>Header Files\TimeOrganizer</Filter>
+    </ClInclude>
+    <ClInclude Include="TableLayout.h">
+      <Filter>Header Files\DataDescription\Layout\Table</Filter>
+    </ClInclude>
+    <ClInclude Include="ICalendarAtrParser.h">
+      <Filter>Header Files\DataDescription\Layout\ICalendar</Filter>
+    </ClInclude>
+    <ClInclude Include="ICalendarAtrPrinter.h">
+      <Filter>Header Files\DataDescription\Layout\ICalendar</Filter>
+    </ClInclude>
+    <ClInclude Include="AtrParser.h">
+      <Filter>Header Files\DataDescription\Layout</Filter>
+    </ClInclude>
+    <ClInclude Include="AtrPrinter.h">
+      <Filter>Header Files\DataDescription\Layout</Filter>
+    </ClInclude>
+    <ClInclude Include="ICalendarLayout.h">
+      <Filter>Header Files\DataDescription\Layout\ICalendar</Filter>
+    </ClInclude>
+    <ClInclude Include="NamelessAtrParser.h">
+      <Filter>Header Files\DataDescription\Layout\Table</Filter>
+    </ClInclude>
+    <ClInclude Include="NamelessAtrPrinter.h">
+      <Filter>Header Files\DataDescription\Layout\Table</Filter>
+    </ClInclude>
+    <ClInclude Include="AtrNamer.h">
+      <Filter>Header Files\DataDescription\Layout</Filter>
+    </ClInclude>
+    <ClInclude Include="Layout.h">
+      <Filter>Header Files\DataDescription\Layout</Filter>
+    </ClInclude>
+    <ClInclude Include="Format.h">
+      <Filter>Header Files\DataDescription\Format</Filter>
+    </ClInclude>
+    <ClInclude Include="FormatRegister.h">
+      <Filter>Header Files\DataDescription\Format</Filter>
+    </ClInclude>
+    <ClInclude Include="TimeOrganizerIndividual.h">
+      <Filter>Header Files\TimeOrganizer\TOI</Filter>
+    </ClInclude>
+    <ClInclude Include="CsCz.h">
+      <Filter>Header Files\DataDescription\Format\Cultures\cs-cz</Filter>
+    </ClInclude>
+    <ClInclude Include="EnUs.h">
+      <Filter>Header Files\DataDescription\Format\Cultures\en-us</Filter>
+    </ClInclude>
+    <ClInclude Include="DateParserCsCz.h">
+      <Filter>Header Files\DataDescription\Format\Cultures\cs-cz</Filter>
+    </ClInclude>
+    <ClInclude Include="DatePrinterCsCz.h">
+      <Filter>Header Files\DataDescription\Format\Cultures\cs-cz</Filter>
+    </ClInclude>
+    <ClInclude Include="TimePrinterCsCz.h">
+      <Filter>Header Files\DataDescription\Format\Cultures\cs-cz</Filter>
+    </ClInclude>
+    <ClInclude Include="TimeParserCsCz.h">
+      <Filter>Header Files\DataDescription\Format\Cultures\cs-cz</Filter>
+    </ClInclude>
+    <ClInclude Include="DateParserEnUs.h">
+      <Filter>Header Files\DataDescription\Format\Cultures\en-us</Filter>
+    </ClInclude>
+    <ClInclude Include="DatePrinterEnUs.h">
+      <Filter>Header Files\DataDescription\Format\Cultures\en-us</Filter>
+    </ClInclude>
+    <ClInclude Include="TimeParserEnUs.h">
+      <Filter>Header Files\DataDescription\Format\Cultures\en-us</Filter>
+    </ClInclude>
+    <ClInclude Include="TimePrinterEnUs.h">
+      <Filter>Header Files\DataDescription\Format\Cultures\en-us</Filter>
+    </ClInclude>
+    <ClInclude Include="TimeOrganizerParser.h">
+      <Filter>Header Files\TimeOrganizer</Filter>
+    </ClInclude>
+    <ClInclude Include="TimeOrganizerPrinter.h">
+      <Filter>Header Files\TimeOrganizer</Filter>
+    </ClInclude>
+    <ClInclude Include="TOIParser.h">
+      <Filter>Header Files\TimeOrganizer\TOI</Filter>
+    </ClInclude>
+    <ClInclude Include="TOIPrinter.h">
+      <Filter>Header Files\TimeOrganizer\TOI</Filter>
+    </ClInclude>
+    <ClInclude Include="TimeOrganizerOperation.h">
+      <Filter>Header Files\TimeOrganizer\TOOperations</Filter>
+    </ClInclude>
+    <ClInclude Include="ICalendarFormat.h">
+      <Filter>Header Files\DataDescription\Format\ICalendar</Filter>
+    </ClInclude>
+    <ClInclude Include="ICalDateParser.h">
+      <Filter>Header Files\DataDescription\Format\ICalendar</Filter>
+    </ClInclude>
+    <ClInclude Include="ICalDatePrinter.h">
+      <Filter>Header Files\DataDescription\Format\ICalendar</Filter>
+    </ClInclude>
+    <ClInclude Include="ICalTimeParser.h">
+      <Filter>Header Files\DataDescription\Format\ICalendar</Filter>
+    </ClInclude>
+    <ClInclude Include="ICalTimePrinter.h">
+      <Filter>Header Files\DataDescription\Format\ICalendar</Filter>
+    </ClInclude>
+    <ClInclude Include="StringUtils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UniverzalDTParser.h">
+      <Filter>Header Files\DateTime</Filter>
+    </ClInclude>
+    <ClInclude Include="FilterOperation.h">
+      <Filter>Header Files\TimeOrganizer\TOOperations\Filter</Filter>
+    </ClInclude>
+    <ClInclude Include="SortOperation.h">
+      <Filter>Header Files\TimeOrganizer\TOOperations\Sort</Filter>
+    </ClInclude>
+    <ClInclude Include="TOOParser.h">
+      <Filter>Header Files\TimeOrganizer\TOOperations</Filter>
+    </ClInclude>
+    <ClInclude Include="TOOParserRegister.h">
+      <Filter>Header Files\TimeOrganizer\TOOperations</Filter>
+    </ClInclude>
+    <ClInclude Include="FilterOperationParser.h">
+      <Filter>Header Files\TimeOrganizer\TOOperations\Filter</Filter>
+    </ClInclude>
+    <ClInclude Include="SortOperationParser.h">
+      <Filter>Header Files\TimeOrganizer\TOOperations\Sort</Filter>
+    </ClInclude>
+    <ClInclude Include="DateTimeFilter.h">
+      <Filter>Header Files\TimeOrganizer\Filters</Filter>
+    </ClInclude>
+    <ClInclude Include="DateTimeFilterParser.h">
+      <Filter>Header Files\TimeOrganizer\Filters</Filter>
+    </ClInclude>
+    <ClInclude Include="DescOrderComparer.h">
+      <Filter>Header Files\TimeOrganizer\TOOperations</Filter>
+    </ClInclude>
+    <ClInclude Include="AscOrderComparer.h">
+      <Filter>Header Files\TimeOrganizer\TOOperations</Filter>
+    </ClInclude>
+    <ClInclude Include="ArgumentsProcessor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RemoveOperation.h">
+      <Filter>Header Files\TimeOrganizer\TOOperations\Remove</Filter>
+    </ClInclude>
+    <ClInclude Include="RemoveOperationParser.h">
+      <Filter>Header Files\TimeOrganizer\TOOperations\Remove</Filter>
+    </ClInclude>
+    <ClInclude Include="TimeOrganizerOperator.h">
+      <Filter>Header Files\TimeOrganizer</Filter>
+    </ClInclude>
+    <ClInclude Include="LayoutFactory.h">
+      <Filter>Header Files\DataDescription\Layout</Filter>
+    </ClInclude>
+    <ClInclude Include="TableLayoutFactory.h">
+      <Filter>Header Files\DataDescription\Layout\Table</Filter>
+    </ClInclude>
+    <ClInclude Include="ICalendarLayoutFactory.h">
+      <Filter>Header Files\DataDescription\Layout\ICalendar</Filter>
+    </ClInclude>
+    <ClInclude Include="LayoutFactoryRegister.h">
+      <Filter>Header Files\DataDescription\Layout</Filter>
+    </ClInclude>
+    <ClInclude Include="TOIIO.h">
+      <Filter>Header Files\TimeOrganizer\TOI</Filter>
+    </ClInclude>
+    <ClInclude Include="TOIIORegister.h">
+      <Filter>Header Files\TimeOrganizer\TOI</Filter>
+    </ClInclude>
+    <ClInclude Include="InputParser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OutputPrinter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="InsertOperation.h">
+      <Filter>Header Files\TimeOrganizer\TOOperations\Insert</Filter>
+    </ClInclude>
+    <ClInclude Include="InsertOperationParser.h">
+      <Filter>Header Files\TimeOrganizer\TOOperations\Insert</Filter>
+    </ClInclude>
+    <ClInclude Include="TOOGeneralParser.h">
+      <Filter>Header Files\TimeOrganizer\TOOperations</Filter>
+    </ClInclude>
+    <ClInclude Include="MergeOperation.h">
+      <Filter>Header Files\TimeOrganizer\TOOperations\Merge</Filter>
+    </ClInclude>
+    <ClInclude Include="MergeOperationParser.h">
+      <Filter>Header Files\TimeOrganizer\TOOperations\Merge</Filter>
+    </ClInclude>
+    <ClInclude Include="ArgTranslator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DateTimeInterval.h">
+      <Filter>Header Files\DateTime</Filter>
+    </ClInclude>
+    <ClInclude Include="CurrentDateTimeIntervals.h">
+      <Filter>Header Files\DateTime</Filter>
+    </ClInclude>
+    <ClInclude Include="FilterParser.h">
+      <Filter>Header Files\TimeOrganizer\Filters</Filter>
+    </ClInclude>
+    <ClInclude Include="CurrentDateTimeIntervalFilterParser.h">
+      <Filter>Header Files\TimeOrganizer\Filters</Filter>
+    </ClInclude>
+    <ClInclude Include="CurrentDateTimeIntervalFilter.h">
+      <Filter>Header Files\TimeOrganizer\Filters</Filter>
+    </ClInclude>
+    <ClInclude Include="FilterParserRegister.h">
+      <Filter>Header Files\TimeOrganizer\Filters</Filter>
+    </ClInclude>
+    <ClInclude Include="CurrentDateTime.h">
+      <Filter>Header Files\DateTime</Filter>
+    </ClInclude>
+    <ClInclude Include="TopFilter.h">
+      <Filter>Header Files\TimeOrganizer\Filters</Filter>
+    </ClInclude>
+    <ClInclude Include="TopFilterParser.h">
+      <Filter>Header Files\TimeOrganizer\Filters</Filter>
+    </ClInclude>
+    <ClInclude Include="NegFilter.h">
+      <Filter>Header Files\TimeOrganizer\Filters</Filter>
+    </ClInclude>
+    <ClInclude Include="TimeOrganizerManager.h">
+      <Filter>Header Files\TimeOrganizer</Filter>
+    </ClInclude>
+    <ClInclude Include="FileException.h">
+      <Filter>Header Files\Exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="TodolisterException.h">
+      <Filter>Header Files\Exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="InvalidArgumentException.h">
+      <Filter>Header Files\Exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="ParseException.h">
+      <Filter>Header Files\Exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="EmptyVals.h">
+      <Filter>Header Files\DataDescription</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
